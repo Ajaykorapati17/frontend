@@ -1,0 +1,310 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    width: 350px;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    left: 100;
+    bottom: 0;
+    display:block;
+}
+.container1 .logo img{
+    width: 30px;
+}
+.container1 .logo{
+    margin: 20px;
+}
+.library{
+    background-color: rgb(72, 7, 7);
+    border-radius: 20px;
+    height: 80%;
+    padding: 10px ;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+.library ul  {
+    margin: 10px;
+}
+.library ul li a:hover{
+    color:white;
+
+}
+.support ul li a:hover{
+    color:white;
+
+}
+
+.library ul li a{
+    color: rgb(174, 166, 166);
+    font-size: 20px;
+    font-weight: 600;
+}
+.library ul li a i{
+    font-size: 120%;
+    margin-right: 5px;
+}
+   .plus::after{
+    content: '+';
+    float: right;
+    text-align: center;
+    font-size: 25px;
+   }
+   .create-playlist{
+
+    background-color: rgb(50, 53, 52);
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom:10px;
+   }
+   .sidescroll{
+    border-bottom-right-radius: 20px;
+    height:290px;
+    overflow-y: scroll;
+    border-radius: 20px;
+   }
+   .sidescroll button:hover{
+    padding: 12px;
+   }
+   .sidescroll::-webkit-scrollbar{
+    /* display: none; */
+    background: transparent;
+   }
+   .sidescroll::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 6px;
+    border-radius: 20px;
+   }
+   .sidescroll:hover::-webkit-scrollbar-thumb{
+    background: rgb(125, 94, 102);
+   }
+   .create-playlist h4{
+    color: white;
+    font-size: 15px;
+   }
+   .create-playlist p{
+    color: white;
+    font-size: 12px;
+    margin:12px 0;
+   }
+   .create-playlist button{
+    padding: 8px 14px;
+    border:0;
+    outline: 0;
+    border-radius: 20px;
+    font-weight: 600;
+   }
+   .support ul li a{
+    color: rgb(138, 136, 136);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px 7px;
+   }
+   .langbutton{
+    margin-left: 20px;
+    padding:10px 20px ;
+    width: 125px;
+    background-color: gray;
+    border: 1px solid white;
+    border-radius:20px;
+   }
+   .langbutton button {
+     padding: 0px 5px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color:transparent;
+    font-weight: 600; 
+   }
+   .langbutton:hover{
+    padding: 12px ;
+    background-color: white;
+   }
+   .main{
+    margin-left: 360px;
+    background-color:black;
+    margin-top: 1px;
+    height: 100%;
+   }
+   .main .top-nav{
+    padding: 20px 30px;
+    background-color:rgb(72, 7, 7);
+    border-radius: 20px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+   }
+   .main .top-nav button{
+   background-color: transparent;
+   border: none;
+   }
+   .main .top-nav button i{
+    color: gray;
+    font-size: 30px;
+    }
+    .main .top-nav button i:hover{
+        padding: 3px;
+        color:white;
+        font-size: 30px;
+        }
+   .main .search-bar label{
+    background-color: white;
+    border-radius: 20px;
+    padding: 6px;
+    font-weight: 600px;
+   }
+   .main .search-bar input{
+    background-color: white;
+    border-radius: 20px;
+    padding:10px;
+    align-items: center;
+   }
+   .main .signup button {
+    color:black;
+    background-color: gray;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-weight: 600;
+    }
+    .main .signup button:hover {
+        padding: 9px;
+        background-color:white;
+        
+    }
+   .playlist{
+    padding: 15px 15px;
+    background-color: rgb(72, 7, 7);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid white;
+   }
+   .playlist h2{
+    color:white;
+    padding: 4px;
+    font-size: 20px;
+    margin-bottom: 2px;
+   }
+   .playlist .playlist-body{
+    display: flex;
+    gap:20px;
+    overflow-x: auto;
+    overflow-y: auto;
+  
+   }
+   
+   .playlist .playlist-body .frame{
+    border-radius: 10px;
+    border: 1px solid rgb(107, 105, 105);
+    width: 400px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 3px;
+     }
+     .playlist .playlist-body .frame:hover{
+        background-color: rgb(65, 62, 62);
+        padding: 4px;
+         }
+      .playlist-body::-webkit-scrollbar{
+        display: none; 
+        background: transparent;
+       }
+       .playlist .playlist-body .frame img{
+        padding-bottom: 0px;
+        border-radius: 10px;
+        border: 1px solid white;
+       }
+       .playlist .playlist-body .frame p{
+        padding: 5px;
+        color: white;
+        font-weight: 400;
+        
+       }
+       .playlist .playlist-body .frame p:hover{
+        text-decoration: underline;
+        
+       }
+       .playlist .playlist-body .frame i{
+        padding: 7px;
+       }
+       .playlist .playlist-body .frame .play{
+         position: relative;
+     }
+         .playlist .playlist-body .frame .play {
+            background-color:white;
+            border-radius: 40px;
+            padding: 6px;
+            margin-left: 110px;
+            opacity: 0.6;
+            transform: translateY(35px);
+    }
+    .playlist .playlist-body .frame .play:hover{
+        opacity: 1;
+        background-color: green;
+
+    }
+    .footer-section {
+        margin-left: 360px;
+        background-color: black;
+        margin-top: 10px;
+        border-radius: 20px;
+       }
+
+       .footer-section .links{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+       
+       }
+       .footer-section .media{
+
+        padding: 30px;
+       }
+       .footer-section .media i{
+        color: white;
+        background-color:gray;
+        border-radius: 50%;
+        padding: 10px;
+
+       }
+       .footer-section .media i:hover{
+        color:black;
+        background-color:white;
+        padding: 12px;
+
+       }
+.footer .links .column div{
+    color: white;
+   
+    font-weight: 600;
+
+}
+.footer .links .column  ul li a{
+    color:gray;
+    font-weight: 600;
+    font-size: 12px; 
+
+}
+.footer .links .column ul li a:hover{
+    color:white;
+    text-decoration: underline;
+
+}
+.footer-section .copyright{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+            
